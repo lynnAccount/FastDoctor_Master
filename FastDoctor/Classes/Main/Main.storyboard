@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPX-4c-aZ9">
+                                <rect key="frame" x="0.0" y="64" width="600" height="183"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="183" id="pDD-lN-Sew"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xic-1k-jqu">
+                                <rect key="frame" x="0.0" y="255" width="6" height="27"/>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.74117647060000003" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="6" id="0Zt-Rg-Tss"/>
+                                    <constraint firstAttribute="height" constant="27" id="tRa-dD-Neq"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预约挂号" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi8-WI-FwS">
+                                <rect key="frame" x="14" y="254" width="566" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="XM9-LF-iQS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ep0-NZ-bi4">
+                                <rect key="frame" x="0.0" y="290" width="600" height="1"/>
+                                <color key="backgroundColor" red="0.73262604949999999" green="0.80878239799999996" blue="0.81293402780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="fVo-Oq-RZA"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rs-8u-O3I" userLabel="找科室">
+                                <rect key="frame" x="213" y="299" width="174" height="77"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="按科室">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="departmentClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N3J-5a-Xm8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfQ-E4-Yi5" userLabel="搜疾病">
+                                <rect key="frame" x="407" y="299" width="173" height="77"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="按疾病">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="diseaseClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNJ-JR-jNI"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CX0-pN-x2D">
+                                <rect key="frame" x="0.0" y="381" width="6" height="27"/>
+                                <color key="backgroundColor" red="0.28627450980000002" green="0.74117647060000003" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="FMQ-BG-2lx"/>
+                                    <constraint firstAttribute="width" constant="6" id="vHW-n1-iyJ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名医通" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHc-tl-Uob">
+                                <rect key="frame" x="14" y="381" width="566" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="Syv-Ip-CP2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUW-Mp-t9g">
+                                <rect key="frame" x="0.0" y="416" width="600" height="1"/>
+                                <color key="backgroundColor" red="0.73262604949999999" green="0.80878239799999996" blue="0.81293402780000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="krp-ya-eIf"/>
+                                </constraints>
+                            </view>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Kn-ge-N4r">
+                                <rect key="frame" x="303" y="422" width="287" height="54"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.28627450980392155" green="0.74117647058823533" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="肿瘤" image="肿瘤1">
+                                    <color key="titleColor" red="0.28627450980392155" green="0.74117647058823533" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="seriousDiseaseClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M68-Nu-QnH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="okB-Px-Ivn">
+                                <rect key="frame" x="10" y="481" width="288" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.28627450980392155" green="0.74117647058823533" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="心血管" image="心血管系统1">
+                                    <color key="titleColor" red="0.28627450980000002" green="0.74117647060000003" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="seriousDiseaseClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NGU-yq-B82"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKj-ml-Wl0">
+                                <rect key="frame" x="303" y="481" width="287" height="55"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.28627450980392155" green="0.74117647058823533" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="神经系统" image="神经系统1">
+                                    <color key="titleColor" red="0.28627450980000002" green="0.74117647060000003" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="seriousDiseaseClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgQ-i6-zef"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myv-lu-TDi">
+                                <rect key="frame" x="10" y="541" width="288" height="54"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.28627450980392155" green="0.74117647058823533" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="骨科病" image="骨科病1">
+                                    <color key="titleColor" red="0.28627450980000002" green="0.74117647060000003" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="seriousDiseaseClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OmH-jH-hER"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkM-Ei-LrR" userLabel="找医院">
+                                <rect key="frame" x="20" y="299" width="173" height="77"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="Z9o-DV-wsV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="1" maxX="1" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="1"/>
+                                <state key="normal" image="按医院">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hospitalClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9qn-vx-50x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7m-um-iTG">
+                                <rect key="frame" x="303" y="541" width="287" height="54"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" red="0.28627450980392155" green="0.74117647058823533" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="35" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="30" minY="0.0" maxX="10" maxY="0.0"/>
+                                <state key="normal" title="更多症状" image="更多1">
+                                    <color key="titleColor" red="0.28627450980000002" green="0.74117647060000003" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="seriousDiseaseClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rMO-ho-kWU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvC-g4-yed">
+                                <rect key="frame" x="10" y="422" width="288" height="54"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="tintColor" red="0.28627450980392155" green="0.74117647058823533" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="血液病" image="血液病1">
+                                    <color key="titleColor" red="0.28627450980000002" green="0.74117647060000003" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="seriousDiseaseClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3F-wT-tGl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xi8-WI-FwS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1vL-zP-JYi"/>
+                            <constraint firstAttribute="trailing" secondItem="bUW-Mp-t9g" secondAttribute="trailing" id="2fn-Ue-6Nj"/>
+                            <constraint firstItem="lkM-Ei-LrR" firstAttribute="top" secondItem="ep0-NZ-bi4" secondAttribute="bottom" constant="8" id="5Aq-zy-HtN"/>
+                            <constraint firstItem="XfQ-E4-Yi5" firstAttribute="height" secondItem="lkM-Ei-LrR" secondAttribute="height" id="5by-m7-6JV"/>
+                            <constraint firstItem="lkM-Ei-LrR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="5gM-Wc-LkZ"/>
+                            <constraint firstAttribute="trailing" secondItem="dHc-tl-Uob" secondAttribute="trailing" constant="20" id="AcK-kE-R5E"/>
+                            <constraint firstItem="0rs-8u-O3I" firstAttribute="height" secondItem="lkM-Ei-LrR" secondAttribute="height" id="CFp-31-qgL"/>
+                            <constraint firstItem="zvC-g4-yed" firstAttribute="top" secondItem="bUW-Mp-t9g" secondAttribute="bottom" constant="5" id="CWu-kM-0a9"/>
+                            <constraint firstItem="GPX-4c-aZ9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DgQ-j4-tiT"/>
+                            <constraint firstItem="MKj-ml-Wl0" firstAttribute="leading" secondItem="okB-Px-Ivn" secondAttribute="trailing" constant="5" id="Eyl-Ed-uWv"/>
+                            <constraint firstItem="ep0-NZ-bi4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GOj-o8-PSb"/>
+                            <constraint firstItem="myv-lu-TDi" firstAttribute="top" secondItem="okB-Px-Ivn" secondAttribute="bottom" constant="5" id="I2F-DA-72S"/>
+                            <constraint firstItem="P7m-um-iTG" firstAttribute="top" secondItem="MKj-ml-Wl0" secondAttribute="bottom" constant="5" id="JKc-XQ-HjC"/>
+                            <constraint firstItem="0rs-8u-O3I" firstAttribute="centerY" secondItem="lkM-Ei-LrR" secondAttribute="centerY" id="JSS-9v-r3F"/>
+                            <constraint firstItem="xic-1k-jqu" firstAttribute="top" secondItem="GPX-4c-aZ9" secondAttribute="bottom" constant="8" id="JTq-mJ-qUd"/>
+                            <constraint firstItem="okB-Px-Ivn" firstAttribute="height" secondItem="zvC-g4-yed" secondAttribute="height" id="L09-eM-dNT"/>
+                            <constraint firstItem="myv-lu-TDi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Lqs-0p-mcW"/>
+                            <constraint firstItem="xi8-WI-FwS" firstAttribute="top" secondItem="GPX-4c-aZ9" secondAttribute="bottom" constant="7" id="M2N-7s-yw6"/>
+                            <constraint firstItem="P7m-um-iTG" firstAttribute="width" secondItem="zvC-g4-yed" secondAttribute="width" id="Mml-yc-FTy"/>
+                            <constraint firstItem="MKj-ml-Wl0" firstAttribute="height" secondItem="zvC-g4-yed" secondAttribute="height" id="NHC-fl-QGc"/>
+                            <constraint firstItem="0rs-8u-O3I" firstAttribute="width" secondItem="lkM-Ei-LrR" secondAttribute="width" id="OLH-Lp-uFP"/>
+                            <constraint firstItem="CX0-pN-x2D" firstAttribute="top" secondItem="lkM-Ei-LrR" secondAttribute="bottom" constant="5" id="P8e-4W-gZ3"/>
+                            <constraint firstItem="CX0-pN-x2D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P9e-JU-gY5"/>
+                            <constraint firstItem="ep0-NZ-bi4" firstAttribute="top" secondItem="xic-1k-jqu" secondAttribute="bottom" constant="8" id="QIs-iT-paJ"/>
+                            <constraint firstItem="bUW-Mp-t9g" firstAttribute="top" secondItem="dHc-tl-Uob" secondAttribute="bottom" constant="8" id="UT0-Cg-1LU"/>
+                            <constraint firstItem="P7m-um-iTG" firstAttribute="leading" secondItem="myv-lu-TDi" secondAttribute="trailing" constant="5" id="UlF-2N-yND"/>
+                            <constraint firstItem="5Kn-ge-N4r" firstAttribute="leading" secondItem="zvC-g4-yed" secondAttribute="trailing" constant="5" id="Vul-KW-4ua"/>
+                            <constraint firstItem="dHc-tl-Uob" firstAttribute="top" secondItem="XfQ-E4-Yi5" secondAttribute="bottom" constant="5" id="Yen-UE-yKV"/>
+                            <constraint firstItem="MKj-ml-Wl0" firstAttribute="width" secondItem="zvC-g4-yed" secondAttribute="width" id="ZXY-eS-LUj"/>
+                            <constraint firstItem="lkM-Ei-LrR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Zfd-SZ-rhp"/>
+                            <constraint firstItem="P7m-um-iTG" firstAttribute="height" secondItem="zvC-g4-yed" secondAttribute="height" id="avK-qa-oGW"/>
+                            <constraint firstItem="GPX-4c-aZ9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="bIa-zX-vQb"/>
+                            <constraint firstAttribute="trailing" secondItem="5Kn-ge-N4r" secondAttribute="trailing" constant="10" id="bXZ-RG-7fx"/>
+                            <constraint firstItem="0rs-8u-O3I" firstAttribute="leading" secondItem="lkM-Ei-LrR" secondAttribute="trailing" constant="20" id="bne-9t-ZnP"/>
+                            <constraint firstItem="5Kn-ge-N4r" firstAttribute="width" secondItem="zvC-g4-yed" secondAttribute="width" id="cPv-tw-XB9"/>
+                            <constraint firstItem="XfQ-E4-Yi5" firstAttribute="centerY" secondItem="lkM-Ei-LrR" secondAttribute="centerY" id="dcF-gi-0Yw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="myv-lu-TDi" secondAttribute="bottom" constant="5" id="e54-F0-dED"/>
+                            <constraint firstItem="okB-Px-Ivn" firstAttribute="width" secondItem="zvC-g4-yed" secondAttribute="width" id="fFt-Z4-zBH"/>
+                            <constraint firstAttribute="trailing" secondItem="GPX-4c-aZ9" secondAttribute="trailing" id="g5J-NZ-MiT"/>
+                            <constraint firstItem="XfQ-E4-Yi5" firstAttribute="leading" secondItem="0rs-8u-O3I" secondAttribute="trailing" constant="20" id="kXr-y9-a3w"/>
+                            <constraint firstItem="bUW-Mp-t9g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ko6-4f-UgK"/>
+                            <constraint firstItem="5Kn-ge-N4r" firstAttribute="top" secondItem="bUW-Mp-t9g" secondAttribute="bottom" constant="5" id="lsd-jN-UJn"/>
+                            <constraint firstItem="myv-lu-TDi" firstAttribute="width" secondItem="zvC-g4-yed" secondAttribute="width" id="mpE-ut-dpo"/>
+                            <constraint firstItem="myv-lu-TDi" firstAttribute="height" secondItem="zvC-g4-yed" secondAttribute="height" id="mrd-KT-MIq"/>
+                            <constraint firstAttribute="trailing" secondItem="XfQ-E4-Yi5" secondAttribute="trailing" constant="20" id="nLh-dV-4Yb"/>
+                            <constraint firstItem="xi8-WI-FwS" firstAttribute="leading" secondItem="xic-1k-jqu" secondAttribute="trailing" constant="8" id="naU-tp-UXo"/>
+                            <constraint firstItem="MKj-ml-Wl0" firstAttribute="top" secondItem="5Kn-ge-N4r" secondAttribute="bottom" constant="5" id="nqO-pD-LHb"/>
+                            <constraint firstItem="xic-1k-jqu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qnd-tP-lZv"/>
+                            <constraint firstItem="5Kn-ge-N4r" firstAttribute="height" secondItem="zvC-g4-yed" secondAttribute="height" id="rcG-hd-cKc"/>
+                            <constraint firstItem="okB-Px-Ivn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="scF-A0-ePl"/>
+                            <constraint firstItem="okB-Px-Ivn" firstAttribute="top" secondItem="zvC-g4-yed" secondAttribute="bottom" constant="5" id="uMi-yg-3wL"/>
+                            <constraint firstItem="zvC-g4-yed" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="whZ-uM-IEP"/>
+                            <constraint firstAttribute="trailing" secondItem="ep0-NZ-bi4" secondAttribute="trailing" id="xTo-XX-eyx"/>
+                            <constraint firstItem="dHc-tl-Uob" firstAttribute="leading" secondItem="CX0-pN-x2D" secondAttribute="trailing" constant="8" id="zgF-EI-KId"/>
+                            <constraint firstItem="XfQ-E4-Yi5" firstAttribute="width" secondItem="lkM-Ei-LrR" secondAttribute="width" id="zjb-Ci-tBF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UhT-s1-lvd"/>
+                    <connections>
+                        <outlet property="scrollView" destination="GPX-4c-aZ9" id="aKT-TK-kTe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="216"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="心血管系统1" width="20" height="19"/>
+        <image name="按医院" width="34" height="39"/>
+        <image name="按疾病" width="26" height="35"/>
+        <image name="按科室" width="25" height="32"/>
+        <image name="更多1" width="18" height="18"/>
+        <image name="神经系统1" width="18" height="18"/>
+        <image name="肿瘤1" width="22" height="24"/>
+        <image name="血液病1" width="16" height="24"/>
+        <image name="骨科病1" width="21" height="24"/>
+    </resources>
+</document>

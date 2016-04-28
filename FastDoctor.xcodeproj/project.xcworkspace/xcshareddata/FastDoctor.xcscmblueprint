@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9C99B22F6DBB957F97C341EC5875056956972D9F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "c3ea5608-a9c2-964c-a393-12290b4ddc71++1340" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "c3ea5608-a9c2-964c-a393-12290b4ddc71++1340" : 0,
+    "9C99B22F6DBB957F97C341EC5875056956972D9F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AD62A3BD-B61C-4FB4-9E74-4EF8531420CE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "c3ea5608-a9c2-964c-a393-12290b4ddc71++1340" : "FastDoctor\/",
+    "9C99B22F6DBB957F97C341EC5875056956972D9F" : "FastDoctor_Master\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FastDoctor",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FastDoctor.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lynnAccount\/FastDoctor_Master.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9C99B22F6DBB957F97C341EC5875056956972D9F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.33.35\/svn\/01RepositoryThree",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c3ea5608-a9c2-964c-a393-12290b4ddc71++1340"
+    }
+  ]
+}
