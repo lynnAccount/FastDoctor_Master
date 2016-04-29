@@ -1217,7 +1217,6 @@
 				TargetAttributes = {
 					BAA0A7AA1CCA128A0012F775 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = M689H25BSB;
 					};
 					BAA0A7C31CCA128A0012F775 = {
 						CreatedOnToolsVersion = 7.2;
@@ -1542,7 +1541,7 @@
 				INFOPLIST_FILE = FastDoctor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = con.myFastDoctor.www;
+				PRODUCT_BUNDLE_IDENTIFIER = con.lynn.myFastDoctor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1559,7 +1558,7 @@
 				INFOPLIST_FILE = FastDoctor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = con.myFastDoctor.www;
+				PRODUCT_BUNDLE_IDENTIFIER = con.lynn.myFastDoctor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
